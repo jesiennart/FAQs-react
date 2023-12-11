@@ -1,0 +1,91 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Work Sans", Courier, monospace;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.background-image {
+    max-width: 100dvw;
+    height: 25dvh;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+  max-width: 500px;
+  padding: 1rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.container h1 {
+  font-size: 2rem;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+.box {
+    cursor: pointer;
+}
+.block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+}
+.quest {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0rem;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    background-color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+
+.answer {
+    max-height: 0px;
+    text-align: left;
+    font-size: 1rem;
+    overflow: hidden;
+    transition: max-height .5s;
+}
+.line {
+    margin-top: 1rem;
+    border: 1px solid rgb(210, 210, 210);
+}
+
+.box.show .answer {
+    max-height: 230px;
+    transition: max-height .5s;
+}
+
+.plus {
+    color: rgb(184, 16, 250);
+}
+.plus:hover {
+    color: hsl(292, 16%, 49%);
+}
+.box.show .plus {
+    display: none;
+    transition: max-height .5s;
+}
+.minus {
+    display: none;
+    color: hsl(292, 42%, 14%);
+}
+.minus:hover {
+    color: hsl(292, 16%, 49%);
+}
+.box.show .minus {
+    display: block;
+    transition: max-height .5s;
+}
