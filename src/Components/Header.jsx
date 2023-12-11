@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
         <div className='background-image'>
-            <img src={backimg} alt='background-image' width={1600} />
+            <img src={backimg} alt='background-pattern' width={1600} />
         </div>
             
         </header>
