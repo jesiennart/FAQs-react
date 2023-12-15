@@ -1,15 +1,8 @@
-import React from 'react';
-import backimg from '../assets/images/background-pattern-desktop.svg'
+import React from "react";
+import '../Components/back.css'
 
 function Header() {
-    return (
-        <header>
-        <div className='background-image'>
-            <img src={backimg} alt='background-pattern' width={1600} />
-        </div>
-            
-        </header>
-    )
+  return <div className="background-image"></div>;
 }
 
 export default Header;

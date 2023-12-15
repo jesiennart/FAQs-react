@@ -1,0 +1,7 @@
+.background-image {
+    position: absolute;
+    width: 100vw;
+    height: 320px;
+    border: 2px solid black;
+    background-image: url(../assets/images/background-pattern-desktop.svg);
+  }
